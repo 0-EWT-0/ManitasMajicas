@@ -8,10 +8,15 @@ const routes = [
     name: 'dashboard',
     component: Dashboard
   },
-{
+  {
     path: '/landing',
     name: 'landing',
     component: LandingPage
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: Home
   }
 ];
 
