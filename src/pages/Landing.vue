@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import { useRouter, RouterLink } from "vue-router";
+</script>
+
 <template>
   <div class="container">
     <div class="mascot-section">
@@ -5,9 +9,12 @@
     </div>
     <div class="text-section">
       <p class="description">
-        La manera entretenida, efectiva y gratuita de aprender lenguaje de señas.
+        La manera entretenida, efectiva y gratuita de aprender lenguaje de
+        señas.
       </p>
-      <button class="start-button">EMPEZAR</button>
+      <button class="start-button font-bold">
+        <RouterLink to="/login" class="font-bold">EMPEZAR</RouterLink>
+      </button>
     </div>
   </div>
 </template>
@@ -27,7 +34,7 @@
 }
 
 .mascot {
-  width: 200px;
+  width: 450px;
   max-width: 100%;
 }
 
@@ -46,14 +53,16 @@
 }
 
 .text-section {
+  margin-top: 10rem;
   margin-left: 2rem;
   text-align: center;
   max-width: 400px;
 }
 
 .description {
+  text-align: start;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #444;
   margin-bottom: 1.5rem;
 }
@@ -61,11 +70,12 @@
 .start-button {
   background-color: #f25c3b;
   color: white;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
+  padding-left: 100px;
+  padding-right: 100px;
   border: none;
   border-radius: 10px;
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.3s;
 }

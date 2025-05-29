@@ -1,3 +1,7 @@
+<script lang="ts">
+ 
+</script>
+
 <template>
     <div class="home-page bg-[#b6eaf5] min-h-screen flex flex-col font-['Fredoka One']">
         <!-- Header -->
