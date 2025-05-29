@@ -1,0 +1,23 @@
+import { createRouter, createWebHistory } from 'vue-router';
+import LandingPage from '@/pages/Landing.vue';
+import Dashboard from '@/pages/Dashboard.vue';
+
+const routes = [
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: Dashboard
+  },
+{
+    path: '/landing',
+    name: 'landing',
+    component: LandingPage
+  }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default router;
