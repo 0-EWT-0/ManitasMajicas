@@ -1,7 +1,6 @@
 import RouterLink from 'vue-router';
 <script lang="ts">
 import { RouterLink } from "vue-router";
-import { Router } from "@/router";
 </script>
 
 <template>
@@ -25,12 +24,14 @@ import { Router } from "@/router";
           placeholder="Contraseña"
           class="w-64 mx-auto block px-4 py-2 mb-8 rounded-full bg-gray-100 text-gray border border-gray-300 focus:outline-none text-center"
         />
-        <button
-          type="submit"
-          class="w-48 mx-auto block bg-[#48D1CC] text-white font-semibold py-2 rounded-full shadow-md hover:bg-[#2fc1b0] transition"
-        >
-          <RouterLink to="/Home" class="text-white"> Entrar</RouterLink>
-        </button>
+        <RouterLink to="/home">
+          <button
+            type="submit"
+            class="w-48 mx-auto block bg-[#48D1CC] text-white font-semibold py-2 rounded-full shadow-md hover:bg-[#2fc1b0] transition"
+          >
+            <RouterLink to="/home" class="text-white"> Entrar</RouterLink>
+          </button>
+        </RouterLink>
         <div class="text-center text-xs mt-4 text-gray-500">
           <a href="#" class="hover font-bold text-gray-400">Crear cuenta</a>
         </div>
