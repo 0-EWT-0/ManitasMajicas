@@ -1,8 +1,8 @@
 import RouterLink from 'vue-router';
-<script lang="ts">
-import { RouterLink } from "vue-router";
-import { Router } from "@/router";
-</script>
+<!-- <script lang="ts">
+// import { RouterLink } from "vue-router";
+// import { Router } from "@/router";
+</script> -->
 
 <template>
   <div class="min-h-screen flex flex-col md:flex-row">
